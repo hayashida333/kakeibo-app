@@ -1,5 +1,6 @@
 <h1>家計簿</h1>
-
+<%= link_to "支出一覧へ", expenses_path, class: "btn btn-secondary mb-3" %>
+<%= link_to "収支ダッシュボードへ", dashboard_path, class: "btn btn-primary mb-3" %>
 <div class="card">
   <div class="card-body">
     <%= form_with method: "get", local: true do |f| %>

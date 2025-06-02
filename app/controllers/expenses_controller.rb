@@ -1,6 +1,5 @@
 class ExpensesController < ApplicationController
-    before_action :set_expense, only: [:edit, :update, :destroy]
-  
+    before_action :set_expense, only: %i[show edit update destroy]
     def index
       @expenses = Expense.order(spent_on: :desc)
     end
@@ -19,6 +18,10 @@ class ExpensesController < ApplicationController
     end
   
     def edit
+    end
+    
+    def show
+      @expense = Expense.find(params[:id])
     end
   
     def update

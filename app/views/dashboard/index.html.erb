@@ -1,0 +1,7 @@
+<h1>収入一覧（<%= @year %>年 <%= @month %>月）</h1>
+
+<p>収入合計: <%= number_to_currency(@total_incomes, unit: "¥") %></p>
+<p>支出合計: <%= number_to_currency(@total_expenses, unit: "¥") %></p>
+<p>収支バランス: <%= number_to_currency(@balance, unit: "¥") %></p>
+
+<%= link_to "家計簿一覧へ戻る", books_path, class: "btn btn-secondary mb-3" %>
