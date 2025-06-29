@@ -1,24 +1,17 @@
-# README
+# kakeibo-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+現金やキャシュレす決済を併用しており、出費を
+把握できるように作成しました。
 
-Things you may want to cover:
+## 起動方法
+```
+bundle install
+bin/rails db:migrate
+bin/rails s
+```
 
-* Ruby version
+以下をブラウザで開くことができます
+http://localhost:3000/
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
